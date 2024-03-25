@@ -1,0 +1,15 @@
+Initialize a GitHub/GitLab project named {Firstname Lastname MLOps}•
+Set up pyenv with Python version 3.11.6.
+Install Poetry along with required dependencies.
+Develop a data application using Streamlit to display various statistics and graphs based on the housing.csv file.
+Create a Dockerfile that install dependencies and run the app
+Write several Make commands:
+    - prepare: Initialize the project with the dependencies.
+    - run: Run the data app
+    - check: Verify formatting of the python files with the commands:
+        - vulture
+        - isort
+        - black
+    - build: Build the docker image
+Add a prometheus client in the project with at least one counter that increment each time we push a specific button
+create a deployment file for the app

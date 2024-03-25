@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "projet-name"
+version = "0.1.0"
+description = "Project description."
+authors = ["Maia Jouenne maia.jouenne@epita.fr"]
+
+[tool.poetry.dependencies] # Direct prod dependencies
+python = ">=3.11,<3.12"
+streamlit = "~1"
+pandas = "~2"
+matplotlib = "^3.5"
+seaborn = "^0.12" 
+prometheus_client = "^0.14"
+
+[tool.poetry.dev-dependencies] # Develop dependencies
+coverage = "~7" # Allow to know the part of code covered
+black = "~23" # Code formatting
+isort = "~5" # Import sort
+mypy = "~1" # Type checking
+pytest = "~7" # For unit tests
+vulture = "~2" # Check dead code
+git-cliff = "~1" # Git commit formatting
