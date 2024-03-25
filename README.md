@@ -1,7 +1,7 @@
 # Maia-Jouenne-MLOps
 ## Introduction
 
-This project demonstrates the deployment of a Streamlit-based data application that visualizes housing market statistics and graphs from a housing.csv file. It includes a Prometheus counter to track specific interactions within the app. This document guides you through the setup and launch of the application and how to visualize the Prometheus metrics.
+This project demonstrates the deployment of a Streamlit-based data application that visualizes housing market statistics and graphs from housing.csv file. It includes a Prometheus counter to track specific interactions within the app. Read the TODO file for more context.
 
 ## Prerequisites
   - Docker
@@ -15,4 +15,19 @@ This project demonstrates the deployment of a Streamlit-based data application t
 minikube start
 eval $(minikube docker-env)
 ```
-2. 
+
+2. Initialize the project:
+```bash
+make prepare
+```
+
+3. Run the data application:
+```bash
+make run
+```
+
+4. Monitoring with prometheus:
+```bash
+prometheus --config.file=prometheus.yaml
+```
+and go to [local](http://localhost:9000/)http://localhost:9000/
